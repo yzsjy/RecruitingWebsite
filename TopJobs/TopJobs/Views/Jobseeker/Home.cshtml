@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>&nbsp;&nbsp;Jobseeker</h2>
+<div class="container">
+    <div class="row admin-main-content">
+        <div class="col-md-12" id="main_container">
+            <br>
+            <div class="row">
+                <div class="col-md-3 welcome-left-block">
+                    <div id="reports">
+
+                        <h2>Quick Stats</h2>
+                        <div id="quick-stats">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Create Resume</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Submit resume for published jobs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>View Jobs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="home-links-area" class="col-md-9">
+
+                    <div class="row" style="padding:10px; background-color:rgba(128, 128, 128, 0.50)">
+                        <div class="col-md-4 col-sm-6 col-xs-12 t-padding ui-droppable" id="box-2">
+                            <div class="tile-p ui-draggable" id="b-2" style="position: relative;">
+                                <a class="home-tile box-1-back">
+                                    <img class="pull-right" src="../../Image/Employer/1.png">
+                                    <h3 class="h3-tile">@Html.ActionLink("Create Resume", "Create", "Jobseeker")</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12 t-padding ui-droppable" id="box-3">
+                            <div class="tile-p ui-draggable" id="b-3" style="position: relative;">
+                                <a class="home-tile box-3-back">
+                                    <img class="pull-right" src="../../Image/Employer/2.png">
+                                    <h3 class="h3-tile">@Html.ActionLink("View Jobs", "Index", "Employer")</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12 t-padding ui-droppable" id="box-3">
+                            <div class="tile-p ui-draggable" id="b-3" style="position: relative;">
+                                <a class="home-tile box-4-back">
+                                    <img class="pull-right" src="../../Image/Employer/3.png">
+                                    <h3 class="h3-tile">@Html.ActionLink("Submit Resume", "Create", "Resume")</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <br><br>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
